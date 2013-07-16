@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://127.0.0.1:5432/sivent</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.id.new_generator_mappings">true</property>
+    
+        <mapping class="com.jswitch.base.modelo.entidades.Empresa"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Oficina"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Departamento"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Licencia"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Usuario"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Encabezado"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Configuracion"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Observacion"/>
+        <mapping class="com.jswitch.base.modelo.entidades.TipoDocumento"/>
+        <mapping class="com.jswitch.base.modelo.entidades.Documento"/>
+        <mapping class="com.jswitch.base.modelo.entidades.ValoresEstandares"/>
+        <mapping class="com.jswitch.base.modelo.entidades.CalendarioBancario"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.direccion.Estado"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.direccion.Municipio"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.direccion.Parroquia"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.direccion.ZonaPostal"/>
+
+        <mapping class="com.jswitch.base.modelo.entidades.helpcenter.maestra.Mensaje"/>
+        <mapping class="com.jswitch.base.modelo.entidades.defaultData.DefaultPersona"/>
+        <mapping class="com.jswitch.reporte.modelo.Reporte"/>
+        <mapping class="com.jswitch.reporte.modelo.ParametroReporte"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoActividadEconomica"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoCapacidadEconomica"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoCuentaBancaria"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoDireccion"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoTelefono2"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoCodigoArea"/>
+        <mapping class="com.jswitch.persona.modelo.dominio.TipoPersona"/>
+        <mapping class="com.jswitch.persona.modelo.maestra.PersonaJuridica"/>
+        <mapping class="com.jswitch.persona.modelo.maestra.PersonaNatural"/>
+        <mapping class="com.jswitch.persona.modelo.maestra.Persona"/>
+        <mapping class="com.jswitch.persona.modelo.maestra.Sucursal"/>
+        <mapping class="com.jswitch.persona.modelo.maestra.Rif"/>
+        <mapping class="com.jswitch.persona.modelo.transac.CuentaBancariaPersona"/>
+        <mapping class="com.jswitch.persona.modelo.transac.DireccionPersona"/>
+        <mapping class="com.jswitch.persona.modelo.transac.TelefonoPersona"/>
+        <mapping class="com.jswitch.rol.modelo.Rol"/>
+        <mapping class="com.jswitch.sms.modelo.SMSMasa"/>
+        <mapping class="com.jswitch.sms.modelo.SMS"/>
+        <mapping class="com.jswitch.sms.modelo.SMSEntrada"/>
+        <mapping class="com.jswitch.sms.modelo.SMSAutomatico"/>
+        <mapping class="com.jswitch.sms.modelo.SMSPreEscrito"/>
+        <mapping class="com.jswitch.auditoria.modelo.AuditLogRecord"/>
+
+        <mapping class="com.jswitch.rol.modelo.MenuByRol"/>
+        <mapping class="com.jswitch.rol.modelo.Item"/>
+        <mapping class="com.jswitch.rol.modelo.Rol"/>
+
+        <mapping class="com.jswitch.inventario.modelo.Almacen"/>
+        <mapping class="com.jswitch.inventario.modelo.CategoriaProducto"/>
+        <mapping class="com.jswitch.inventario.modelo.Producto"/>
+        <mapping class="com.jswitch.inventario.modelo.ProductoSustituto"/>
+        <mapping class="com.jswitch.inventario.modelo.Unidad"/>
+        <mapping class="com.jswitch.inventario.modelo.UnidadMedida"/>
+
+    </session-factory>
+</hibernate-configuration>
